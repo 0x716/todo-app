@@ -24,3 +24,19 @@ Everything is organized under a monorepo structure to make development and deplo
 
 ## 📁 Project Structure
 
+todo-app/
+├── backend/ # Go API using Gin
+├── frontend/ # React SPA (Vite + TypeScript)
+├── docker/ # Docker Compose & Nginx config
+└── README.md
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourname/todo-app.git
+cd todo-app
+
