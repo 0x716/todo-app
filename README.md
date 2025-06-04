@@ -23,13 +23,13 @@ Everything is organized under a monorepo structure to make development and deplo
 ---
 
 ## 📁 Project Structure
-
+```
 todo-app/
 ├── backend/ # Go API using Gin
 ├── frontend/ # React SPA (Vite + TypeScript)
 ├── docker/ # Docker Compose & Nginx config
 └── README.md
-
+```
 ---
 
 ## 🚀 Getting Started
