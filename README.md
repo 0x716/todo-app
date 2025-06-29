@@ -1,42 +1,77 @@
-# 📝 Todo App – Fullstack Monorepo (Go + React + PostgreSQL)
+# TodoApp - PHP + Laravel + TailwindCSS
 
-This is a fullstack TODO application built using:
+A simple and responsive Todo application built with PHP and Laravel, styled with TailwindCSS. This app allows users to create, manage, and track tasks efficiently.
 
-- **Go (Gin)** as the backend RESTful API framework
-- **React + Vite + TypeScript** for the frontend SPA
-- **PostgreSQL** as the database
-- **Docker & Docker Compose** for development and deployment
+## Features
 
-Everything is organized under a monorepo structure to make development and deployment easier.
+- **Create Tasks**: Easily add new tasks.
+- **Update Tasks**: Edit task details.
+- **Delete Tasks**: Remove tasks when completed.
+- **Mark Tasks as Completed**: Toggle task completion status.
+- **Responsive UI**: Built with TailwindCSS for a sleek, responsive design.
 
----
+## Tech Stack
 
-## 📦 Tech Stack
+- **Backend**: PHP, Laravel
+- **Frontend**: TailwindCSS, Blade Templates
+- **Database**: MySQL (or SQLite)
 
-| Layer      | Technology                 |
-|------------|----------------------------|
-| Backend    | Go + Gin, PostgreSQL       |
-| Frontend   | React, Vite, TypeScript    |
-| Config     | Viper + YAML               |
-| Deployment | Docker, Docker Compose     |
+## Installation
 
----
+### Requirements
 
-## 📁 Project Structure
-```
-todo-app/
-├── backend/ # Go API using Gin
-├── frontend/ # React SPA (Vite + TypeScript)
-├── docker/ # Docker Compose & Nginx config
-└── README.md
-```
----
+- PHP 7.4 or higher
+- Composer
+- Laravel 8 or higher
+- MySQL (or SQLite)
 
-## 🚀 Getting Started
+### Steps to Install
 
-### 1. Clone the repository
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/TodoApp.git
+    cd TodoApp
+    ```
 
-```bash
-git clone https://github.com/yourname/todo-app.git
-cd todo-app
+2. Install dependencies:
+    ```bash
+    composer install
+    ```
 
+3. Set up the environment:
+    - Copy `.env.example` to `.env`:
+      ```bash
+      cp .env.example .env
+      ```
+    - Update the database settings in the `.env` file.
+
+4. Generate the application key:
+    ```bash
+    php artisan key:generate
+    ```
+
+5. Run the migrations:
+    ```bash
+    php artisan migrate
+    ```
+
+6. Start the development server:
+    ```bash
+    php artisan serve
+    ```
+    Your app will be available at `http://127.0.0.1:8000`.
+
+## Usage
+
+- Navigate to the home page to see the list of tasks.
+- Add new tasks by clicking the "Add Task" button.
+- Edit or delete tasks as needed.
+- Mark tasks as completed by toggling the checkbox.
+
+## Contributing
+
+Feel free to open issues or create pull requests for improvements.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
